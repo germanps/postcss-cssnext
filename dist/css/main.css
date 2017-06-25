@@ -1,0 +1,14 @@
+.squalHero{
+	padding: 20px;
+	height: 500px;
+}
+
+	.squalHero-header{
+		display: -webkit-box;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		        flex-direction: row;
+		-webkit-box-pack: justify;
+		        justify-content: space-between;
+	}
