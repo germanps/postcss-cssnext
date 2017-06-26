@@ -1,9 +1,31 @@
+
+/* ================== Variables ================== */
+:root{
+	/* ========= Colores ========= */
+	/* ========= Font-size ========= */
+}
+/*  ============ Custom media queries ============ */
+
+/* ==================== Mixins ==================== */
+
+
 .squalHero{
+	background: url('../images/background.png') #466173;
 	padding: 20px;
 	height: 500px;
 }
 
-	.squalHero-header{
+
+@media (-webkit-min-device-pixel-ratio: 2){
+
+
+.squalHero{
+		background: url('../images/background2x.png') #466173
+}
+	}
+
+
+.squalHero-header{
 		display: -webkit-box;
 		display: flex;
 		-webkit-box-orient: horizontal;
@@ -11,4 +33,54 @@
 		        flex-direction: row;
 		-webkit-box-pack: justify;
 		        justify-content: space-between;
+		color: #606060;
+		-webkit-transform: .3s all ease;
+		        transform: .3s all ease;
 	}
+
+
+.squalHero-logo{
+		transition: all .3s ease-in;
+	}
+
+
+.squalHero-logo:hover{
+			filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="4" /></filter></svg>#filter');
+			-webkit-filter: blur(4px);
+			        filter: blur(4px);
+			cursor: pointer;
+		}
+
+
+.squalHero-copy-title{
+			font-size: 45px;
+		}
+
+
+.squalHero-copy-btn{
+			border-radius: 12px;
+			border: none;
+			color: #fafafa;
+			padding: 7px 12px;
+			cursor: pointer;
+			text-decoration: none;
+			font-size: 18px;
+			background: #fd324e;
+			background: linear-gradient(to left, rgb(179, 51, 68), rgb(50, 9, 1));
+		}
+
+.squalFooter{
+	background-color: #273b47;
+}
+
+.squalFooter-form-btn{
+			border-radius: 12px;
+			border: none;
+			color: #fafafa;
+			padding: 7px 12px;
+			cursor: pointer;
+			text-decoration: none;
+			font-size: 18px;
+			background: #fd324e;
+			background: linear-gradient(to left, rgb(179, 51, 68), rgb(50, 9, 1));
+		}
