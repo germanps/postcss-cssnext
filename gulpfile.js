@@ -5,6 +5,7 @@ var cssnext = require('postcss-cssnext');
 var browserSync = require('browser-sync').create();
 var cssnested = require('postcss-nested');
 var mixins = require('postcss-mixins');
+var addImport = require('postcss-import');
 //var autoprefixer = require('autoprefixer');
 
 
@@ -23,6 +24,8 @@ gulp.task('css', function(){
 
 	//Array de plugins de posctcss que utilizaremos(el orden es importante)
 	var processors = [
+		//separación de ficheros con import
+		addImport(),
 		//mixins
 		mixins(),
 		//prefijos para navegadores con mas del 5% de uso y ie8 en adelante
