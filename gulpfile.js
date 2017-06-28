@@ -36,10 +36,10 @@ gulp.task('css', function(){
 		cssnext({ browsers: ['> 5%', 'ie 8']})
 	];
 
-	return gulp.src('./src/*.css') //ficheros de entrada para la tarea
+	return gulp.src('./src/main.css') //ficheros final de producción
 		.pipe(postcss(processors)) //pasamos el array con los plugins
 		.pipe(gulp.dest('./dist/css')) //destino ficheros de los plugins
-		.pipe(browserSync.stream()) //auto-recarga del navegador
+		.pipe(browserSync.stream()); //auto-recarga del navegador
 });
 
 // Watch de tareas (cambios)

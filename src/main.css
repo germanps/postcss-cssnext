@@ -1,5 +1,6 @@
 /* ==================== Imports ==================== */
 @import './variables.css';
+@import './iconfont.css';
 
 /* ==================== Mixins ==================== */
 @define-mixin btn $textColor, $bgColor, $bgColorStart, $bgColorEnd {
