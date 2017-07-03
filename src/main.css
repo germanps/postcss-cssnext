@@ -15,6 +15,35 @@
 	background: linear-gradient(to left, $bgColorStart, $bgColorEnd);
 }
 
+.u-scrollContainer{
+	width: 100%;
+	overflow: auto;
+	white-space: nowrap;
+	margin-bottom: 1rem;
+	scroll-snap-points-x: repeat(100%);
+	scroll-snap-type: mandatory;
+	font-size: 0;
+
+	&-itemContainer{
+		border: 1px solid var(--border-feature);
+		border-radius: 12px;
+		width: 98%;
+		margin: 1%;
+		display: inline-block;
+		line-height: 18px;
+		font-size: 18px;
+	}
+
+	&-itemContent{
+		display: flex;
+
+		& > img{
+			width: auto;
+			height: 200px;
+		}
+	}
+}
+
 
 .squalHero{
 	background: url('../images/background.png') var(--bg-header);
